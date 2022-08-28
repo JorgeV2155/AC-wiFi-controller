@@ -79,6 +79,7 @@ The code is included in the github and it needs some libraries to work:
   - Feather
   - EvilIcons
   - Ionicons
-
-The app has been created using expo
+<br /><br />
 ![App image](assets/images/App_image.png)
+<br /><br /><br />
+The app has been created using expo

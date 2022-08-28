@@ -51,7 +51,7 @@ http://192.168.1.50:85/\_p0\_t20\_m1\_f1\_s0
 
 las variables se añaden precedidas de un \_ y seguidas por su valor.
 
-## POSIBLES VALORES
+### POSIBLES VALORES
 
 - POWER (p): 0 off, 1 on
 - TEMPERATURE (t): an int number in the range supported by your air-conditioning

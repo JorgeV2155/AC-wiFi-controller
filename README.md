@@ -1,12 +1,14 @@
 # AC-wiFi-controller
-A/C wiFi controller that lets you control your old air conditioning with your smartPhone or even with Siri
+Arduino-based A/C wiFi controller that lets you control your Daikin air conditioning with your smartPhone or even with Siri
 
 ![](RackMultipart20220828-1-i3hsg7_html_cb3793dc7e284566.png)
 
 ## INFORMACIÓN
 
 El programa añadido es válido para su uso con los aires acondicionados Daikin, serie ARC.
-
+![AC image](assets/images/AC.jpeg)
+This is the remote control you are using currently with your AC
+![Remote control image](assets/images/RemoteControlARC.jpg)
 ### CIRCUITO
 
 ### COMPONENTES
@@ -26,7 +28,7 @@ El programa de Arduino se encuentra disponible bajo el nombre de _controlAC\_ver
 El programa usa la siguiente librería:
 
 -	DYIRDaikin.h 
-- Más info: [https://github.com/danny-source/Arduino\_DY\_IRDaikin](https://github.com/danny-source/Arduino_DY_IRDaikin)
+- Más info: [https://github.com/danny-source/Arduino_DY_IRDaikin](https://github.com/danny-source/Arduino_DY_IRDaikin)
 
 Explicación de este:
 
@@ -65,7 +67,7 @@ las variables se añaden precedidas de un \_ y seguidas por su valor.
 
 He desarrollado una aplicación en React native que permite el control del aire a través de esta aplicación móvil, válida para dispositivos Android & iOS
 
-![Imagen 4](RackMultipart20220828-1-i3hsg7_html_62c408f1081a300d.gif) El código fuente está incluido en este github y necesita una serie de librerías para funcionar:
+El código fuente está incluido en este github y necesita una serie de librerías para funcionar:
 
 - React-navigation (v6)
   - @react-navigation/bottom-tabs
@@ -81,3 +83,4 @@ He desarrollado una aplicación en React native que permite el control del aire 
   - Ionicons
 
 La aplicación ha sido creada usando expo-cli
+![App image](assets/images/App_image.png)

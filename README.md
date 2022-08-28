@@ -17,7 +17,7 @@ El programa añadido es válido para su uso con los aires acondicionados Daikin,
 - Resistencia 220Ω
 - Cables
 
-![](RackMultipart20220828-1-i3hsg7_html_eeaf37785a96a19.png)
+![Arduino circuit](assets/images/Arduino_circuit.png)
 
 # PROGRAMA DE ARDUINO
 

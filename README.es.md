@@ -54,11 +54,11 @@ las variables se añaden precedidas de un \_ y seguidas por su valor.
 
 ### POSIBLES VALORES
 
-- POWER (p): 0 off, 1 on
-- TEMPERATURE (t): an int number in the range supported by your air-conditioning
-- MODE (m): 0=FAN, 1=COOL, 2=DRY, 3=HEAT(if you have one)
-- FAN (f): 0~4=speed(1,2,3,4,5),5=auto,6=moon
-- SWING (s): 0 off, 1 on
+- ENCENDIDO/APAGADO (p): 0 off, 1 on
+- TEMPERATURA (t): Un número entero en el rango de temperatura soportado por tu A/C
+- MODO (m): 0=FAN, 1=COOL, 2=DRY, 3=HEAT(if you have one)
+- VENTILADOR (f): 0~4=velocidad(1,2,3,4,5),5=auto,6=moon(modo noche)
+- OSCILACIÓN (s): 0 off, 1 on
 
 
 

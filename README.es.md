@@ -17,7 +17,7 @@ This is the remote control you are using currently with your AC:<br /><br /><br 
 - Módulo **ESP8266**
 - Diodo emisor de **infrarrojos**
 - Resistencia 220Ω
-- Cables
+- Cables<br /><br /><br />
 
 ![Arduino circuit](assets/images/Arduino_circuit.png)
 

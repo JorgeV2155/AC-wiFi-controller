@@ -9,7 +9,7 @@ The program can be used for the control of the Daikin ARC series
 <br />
 This is the remote control you are using currently with your AC:<br /><br /><br />
 ![Remote control image](assets/images/RemoteControlARC.jpg)
-### CIRCUIT
+## CIRCUIT
 
 ### COMPONENTS
 
@@ -21,7 +21,7 @@ This is the remote control you are using currently with your AC:<br /><br /><br 
 
 ![Arduino circuit](assets/images/Arduino_circuit.png)
 
-# ARDUINO PROGRAM
+## ARDUINO PROGRAM
 
 The arduino program is the one named _controlAC_versionFinal.ino_
 
@@ -62,7 +62,7 @@ The variables are written after _ and followed by their value
 
 
 
-# REACT NATIVE APP
+## REACT NATIVE APP
 
 I've developed an app that lets you use your Air Conditioner with your smartPhone, it doesn't matter if it runs iOS or Android
 The code is included in the github and it needs some libraries to work:

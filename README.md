@@ -4,8 +4,7 @@ Arduino-based A/C wiFi controller that lets you control your Daikin air conditio
 ![](RackMultipart20220828-1-i3hsg7_html_cb3793dc7e284566.png)
 
 ## INFORMACIÓN
-
-El programa añadido es válido para su uso con los aires acondicionados Daikin, serie ARC.
+The program can be used for the control of the Daikin ARC series
 <br />
 <br />
 This is the remote control you are using currently with your AC:<br /><br /><br />
@@ -14,47 +13,46 @@ This is the remote control you are using currently with your AC:<br /><br /><br 
 
 ### COMPONENTES
 
-- Placa **Arduino Mega**
-- Módulo **ESP8266**
-- Diodo emisor de **infrarrojos**
-- Resistencia 220Ω
-- Cables
+- **Arduino Mega** board
+- **ESP8266** module
+- **Infrarred** emisor diode
+- 220Ω Resistance
+- Wires
 
 ![Arduino circuit](assets/images/Arduino_circuit.png)
 
-# PROGRAMA DE ARDUINO
+# ARDUINO PROGRAM
 
-El programa de Arduino se encuentra disponible bajo el nombre de _controlAC\_versionFinal.ino_
+The arduino program is the one named _controlAC_versionFinal.ino_
 
-El programa usa la siguiente librería:
-
+The program uses the following library
 -	DYIRDaikin.h 
-- Más info: [https://github.com/danny-source/Arduino_DY_IRDaikin](https://github.com/danny-source/Arduino_DY_IRDaikin)
+- More info: [https://github.com/danny-source/Arduino_DY_IRDaikin](https://github.com/danny-source/Arduino_DY_IRDaikin)
 
-Explicación de este:
+Explanation
 
-En su setup() se encarga de:
+In its setup() it takes care of:
 
-- Iniciar la librería del aire acondicionado
-- Iniciar Serial para poder recibir información de la placa esp8266
+- Initialize the air conditioner library
+- Start Serial to be able to receive information from the esp8266 board
 
-En el loop() se encarga de:
+In the loop() it takes care of:
 
-- Ir recibiendo los datos enviados por la placa esp8266 e ir analizándolos:
-  - Va carácter por carácter identificando si están las letras que le indican que parámetros debe enviar al aire acondicionado. Si identifica una de ellas lo que hace es guardar el siguiente número para, posteriormente enviarlo al aire acondicionado
-- Hay un apartado en donde se identifica si ha escrito ready el módulo
-  - Este código sirve por si el módulo tiene un error por cualquier cosa como puede ser sobrecalentamiento, excesivas peticiones, error en una petición…
-  - El módulo se reinicia y cuando está listo indica ready; El programa lo detecta y envía los parámetros requeridos para que el módulo pueda ser usado como servidor web y reciba las peticiones que se le envían
+- Receive the data sent by the esp8266 board and analyze it:
+  - It goes character by character identifying if there are the letters that indicate the parameters to be sent to the air conditioner. If one of them its identified, what it does is save the next number to later send it to the air conditioning
+- There is a section where we try to search for the _ready_ word
+  - This code is used in case the module has an error due to anything such as overheating, excessive requests, an error in a request...
+  - The module restarts and when it is ready it says _ready_; The program detects it and sends the required parameters so that the module can be used as a web server and receive the requests that are sent to it.
 
-La solicitud http se envía a la dirección que el modulo te entregue al poner AT+CIPSTA, seguido de ":elpuertoIndicadoEnELComandoCipMux"
+The http request is sent to the address that the module gives you by typing AT+CIPSTA, followed by ":" and the port indicated by the answer of the _AT+CISPTA?_ command
 
-Ejemplo:
+Example:
 
 http://192.168.1.50:85/\_p0\_t20\_m1\_f1\_s0
 
-las variables se añaden precedidas de un \_ y seguidas por su valor.
+The variables are written after _ and followed by their value
 
-### POSIBLES VALORES
+### POSIBLE VALUES
 
 - POWER (p): 0 off, 1 on
 - TEMPERATURE (t): an int number in the range supported by your air-conditioning
@@ -62,13 +60,12 @@ las variables se añaden precedidas de un \_ y seguidas por su valor.
 - FAN (f): 0~4=speed(1,2,3,4,5),5=auto,6=moon
 - SWING (s): 0 off, 1 on
 
-#
 
-# APLICACIÓN EN REACT NATIVE
 
-He desarrollado una aplicación en React native que permite el control del aire a través de esta aplicación móvil, válida para dispositivos Android & iOS
+# REACT NATIVE APP
 
-El código fuente está incluido en este github y necesita una serie de librerías para funcionar:
+I've developed an app that lets you use your Air Conditioner with your smartPhone, it doesn't matter if it runs iOS or Android
+The code is included in the github and it needs some libraries to work:
 
 - React-navigation (v6)
   - @react-navigation/bottom-tabs
@@ -83,5 +80,5 @@ El código fuente está incluido en este github y necesita una serie de librerí
   - EvilIcons
   - Ionicons
 
-La aplicación ha sido creada usando expo-cli
+The app has been created using expo
 ![App image](assets/images/App_image.png)

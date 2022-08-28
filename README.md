@@ -27,8 +27,7 @@ This is the remote control you are using currently with your AC:<br /><br /><br 
 The arduino program is the one named [_ACControl_finalVersion.ino_](/Arduino/ACControl_finalVersion.ino)
 
 The program uses the following library
--	DYIRDaikin.h 
-- More info: [https://github.com/danny-source/Arduino_DY_IRDaikin](https://github.com/danny-source/Arduino_DY_IRDaikin)
+-	[DYIRDaikin.h ](https://github.com/danny-source/Arduino_DY_IRDaikin)
 
 Explanation
 

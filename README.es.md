@@ -23,7 +23,7 @@ This is the remote control you are using currently with your AC:<br /><br /><br 
 
 ## PROGRAMA DE ARDUINO
 
-El programa de Arduino se encuentra disponible bajo el nombre de _controlAC\_versionFinal.ino_
+El programa de Arduino se encuentra disponible bajo el nombre de _ACControl_finalVersion.ino_
 
 El programa usa la siguiente librería:
 

@@ -82,5 +82,5 @@ The code is included in the github and it needs some libraries to work:
 
 <br /><br /><br />
 ![App image](assets/images/App_image.png)
-<br /><br /><br /><br />
+<br /><br /><br />
 The app has been created using expo

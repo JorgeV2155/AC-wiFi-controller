@@ -9,8 +9,7 @@ El programa añadido es válido para su uso con los aires acondicionados Daikin,
 <br />
 <br />
 <br />
-<br />
-This is the remote control you are using currently with your AC:<br />
+This is the remote control you are using currently with your AC:<br /><br /><br />
 ![Remote control image](assets/images/RemoteControlARC.jpg)
 ### CIRCUITO
 

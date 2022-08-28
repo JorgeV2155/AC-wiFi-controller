@@ -8,7 +8,9 @@ Arduino-based A/C wiFi controller that lets you control your Daikin air conditio
 El programa añadido es válido para su uso con los aires acondicionados Daikin, serie ARC.
 <br />
 <br />
-This is the remote control you are using currently with your AC
+<br />
+<br />
+This is the remote control you are using currently with your AC:<br />
 ![Remote control image](assets/images/RemoteControlARC.jpg)
 ### CIRCUITO
 

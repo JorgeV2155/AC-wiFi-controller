@@ -1,14 +1,13 @@
 # AC-wiFi-controller
-Arduino-based A/C wiFi controller that lets you control your Daikin air conditioning with your smartPhone or even with Siri
-
+Controlador vía WiFi para tu AC basado en Arduino que te permite controlar tu AC Daikin con tu móvil o incluso con un asistente como siri
 Este _README_ está disponible también en [Inglés](README.md)
 ## INFORMACIÓN
 
 El programa añadido es válido para su uso con los aires acondicionados Daikin, serie ARC.
 <br />
 <br />
-This is the remote control you are using currently with your AC:<br /><br /><br />
-![Remote control image](assets/images/RemoteControlARC.jpg)
+Este es el mando que está usando actualmente para su A/C:<br /><br /><br />
+![Mando del aire acondicionado](assets/images/RemoteControlARC.jpg)
 ## CIRCUITO
 
 ### COMPONENTES
@@ -19,7 +18,7 @@ This is the remote control you are using currently with your AC:<br /><br /><br 
 - Resistencia 220Ω
 - Cables<br /><br /><br />
 
-![Arduino circuit](assets/images/Arduino_circuit.png)
+![Circuito de arduino](assets/images/Arduino_circuit.png)
 
 ## PROGRAMA DE ARDUINO
 
@@ -82,4 +81,4 @@ El código fuente está incluido en este github y necesita una serie de librerí
   - Ionicons
 
 La aplicación ha sido creada usando expo-cli
-![App image](assets/images/App_image.png)
+![Imagen de la app](assets/images/App_image.png)

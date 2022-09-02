@@ -44,15 +44,18 @@ In the loop() it takes care of:
   - This code is used in case the module has an error due to anything such as overheating, excessive requests, an error in a request...
   - The module restarts and when it is ready it says _ready_; The program detects it and sends the required parameters so that the module can be used as a web server and receive the requests that are sent to it.
 
-The http request is sent to the address that the module gives you by typing AT+CIPSTA, followed by ":" and the port indicated by the answer of the _AT+CISPTA?_ command
+The http request is sent to the address that the module gives you by typing AT+CIPSTA?, followed by ":" and that you indicated in the AT+CIPSERVER = 1,x (x is the port you indicated)
 
 Example:
 
-http://192.168.1.50:85/\_p0\_t20\_m1\_f1\_s0
+http://192.168.1.50:85/_c260_p0_t20_m1_f1_s0
 
 The variables are written after _ and followed by their value
 
 ### POSIBLE VALUES
+
+- CLOCK (c) [OPTIONAL]: The clock value is used for saying the arduino to execute the order that goes after it after a concrete amount of time, which is specified by the following method; We have to focus on the numbers after the _c_ character. The first one indicates how many characters the number ahead has. It lets the arduino know by what number has to multiply each character ahead. The number ahead (which length is indicated inmediately before it) is the time in seconds the program has to wait.
+Example: http://192.168.1.50:85/_c260_p0
 
 - POWER (p): 0 off, 1 on
 - TEMPERATURE (t): an int number in the range supported by your air-conditioning

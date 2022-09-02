@@ -83,3 +83,5 @@ El código fuente está incluido en este github y necesita una serie de librerí
 
 La aplicación ha sido creada usando expo-cli
 ![Imagen de la app](assets/images/App_image.png)
+
+Escribidme si teneis algún problema, duda o sugerencia

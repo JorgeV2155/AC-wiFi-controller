@@ -43,16 +43,17 @@ En el loop() se encarga de:
   - Este código sirve por si el módulo tiene un error por cualquier cosa como puede ser sobrecalentamiento, excesivas peticiones, error en una petición…
   - El módulo se reinicia y cuando está listo indica ready; El programa lo detecta y envía los parámetros requeridos para que el módulo pueda ser usado como servidor web y reciba las peticiones que se le envían
 
-La solicitud http se envía a la dirección que el modulo te entregue al poner AT+CIPSTA, seguido de ":elpuertoIndicadoEnELComandoCipMux"
+La solicitud http se envía a la dirección que el modulo te entregue al poner AT+CIPSTA, seguido de _:_ y el puerto que usted haya indicado en el comando AT+CIPMUX=1,x (siendo x el puerto indicado)
 
 Ejemplo:
 
-http://192.168.1.50:85/\_p0\_t20\_m1\_f1\_s0
+http://192.168.1.50:85/_p0_t20_m1_f1_s0
 
 las variables se añaden precedidas de un \_ y seguidas por su valor.
 
 ### POSIBLES VALORES
 
+- TIEMPO (c) [OPCIONAL]: Esto nos permite enviar órdenes al arduino que serán cumplidas no en ese instante sino pasado el tiempo especificado. ¿Cómo se especifica el tiempo?: El tiempo nos lo indican los numeros que van después de la letra c. El primer numero (caracter) nos indica el numero de caracteres que el numero a continuación tendrá. El número a continuación (Que tendrá x caracteres, siendo x el número indicado anteriormente) es la cantidad en segundos que el programa debe esperar.
 - ENCENDIDO/APAGADO (p): 0 off, 1 on
 - TEMPERATURA (t): Un número entero en el rango de temperatura soportado por tu A/C
 - MODO (m): 0=FAN, 1=COOL, 2=DRY, 3=HEAT(if you have one)

@@ -22,7 +22,7 @@ Este es el mando que está usando actualmente para su A/C:<br /><br /><br />
 
 ## PROGRAMA DE ARDUINO
 
-El programa de Arduino se encuentra disponible bajo el nombre de [_ACControl_finalVersion.ino_](/Arduino/ACControl_finalVersion.ino)
+El programa de Arduino se encuentra disponible bajo el nombre de [_ACController_finalVersion.ino_](/Arduino/ACController_finalVersion/ACController_finalVersion.ino)
 
 El programa usa la siguiente librería:
 
